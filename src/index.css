@@ -56,8 +56,9 @@ section:not(:first-of-type),footer{
     padding: 0;
     line-height: 40px;
 }
-.back-to-top i{
-    font-size: 35px;
+.back-to-top svg{
+    font-size: 25px;
+    margin-top: 7px;
     color: #ffffff;
 }
 input.form-control,textarea.form-control{
@@ -98,7 +99,7 @@ section#home .overlay {
     opacity: .6;
 }
 section#home {
-    background: url(images/home.jpg) no-repeat;
+    background: url(/images/home.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -178,7 +179,7 @@ section#about .content-info-about p{
 section#about .content-info-about a.btn-info{
     margin-right: 10px;
 }
-section#about .content-info-about a.btn i{
+section#about .content-info-about a.btn svg{
     margin-right: 5px;
 }
 section#about .items-profile{
@@ -227,7 +228,7 @@ section#services .content-item-service{
 section#services .content-item-service .content-icon{
     margin-bottom: 25px;
 }
-section#services .content-item-service .content-icon i{
+section#services .content-item-service .content-icon svg{
     font-size: 42px;
     display: block;
     margin: 0 auto;
@@ -301,7 +302,7 @@ section#timeline h2{
     text-transform: uppercase;
     margin-left: 25px;
 }
-section#timeline ul li.start i{
+section#timeline ul li.start span{
     font-size: 20px;
     float: left;
     margin-left: -30px;
@@ -350,29 +351,25 @@ section#portfolio .content-item-portfolio .overlay{
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
+section#portfolio .content-icon-portfolio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -24px;
+    cursor: pointer;
+}
 section#portfolio .content-icon-portfolio a{
     position: absolute;
     top: 50%;
     color: #fff;
 }
 section#portfolio .content-icon-portfolio a.view{
-    left: 45%;
-}
-section#portfolio .content-icon-portfolio a.link{
-    left: 60%;
-    margin-left: 10px;
-}
-section#portfolio .content-icon-portfolio a i{
+    left: -30px;
     height: 42px;
     width: 42px;
     line-height: 42px;
     color: #00b4d9;
-    left: 50%;
-    margin-left: -24px;
-    margin-top: -24px;
-    top: 50%;
-    position: absolute;
-    z-index: 2;
     cursor: pointer;
     text-align: center;
     font-size: 20px;
@@ -382,8 +379,26 @@ section#portfolio .content-icon-portfolio a i{
     background: #fff;
     border-radius: 4px;
 }
-section#portfolio .content-icon-portfolio a:hover i{
+section#portfolio .content-icon-portfolio a.link{
+    left: 20px;
+    margin-left: 10px;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    color: #00b4d9;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: #fff;
+    border-radius: 4px;
+}
+section#portfolio .content-icon-portfolio a:hover{
     background: #00b4d9;
+}
+section#portfolio .content-icon-portfolio a:hover svg{
     color: #fff;
 }
 section#portfolio .content-item-portfolio:hover .overlay{
@@ -391,7 +406,7 @@ section#portfolio .content-item-portfolio:hover .overlay{
 }
 /* SECTION COUNTER*/
 section#counter{
-    background: url(images/counter.jpg) no-repeat;
+    background: url(/images/counter.jpg) no-repeat; 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -412,7 +427,7 @@ section#counter .content-item-counter{
 section#counter .content-icon-counter{
     margin-bottom: 25px;
 }
-section#counter .content-icon-counter i{
+section#counter .content-icon-counter svg{
     font-size: 48px;
     color: #00b4d9;
 }
@@ -476,6 +491,10 @@ section#contact .content-item-address p{
 }
 section#contact .content-item-address p a{
     color: #666666;
+}
+section#contact .contentMap{
+    width: 100%;
+    min-height: 300px;
 }
 footer{
     background: #1c1c20;
