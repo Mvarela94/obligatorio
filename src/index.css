@@ -496,6 +496,10 @@ section#contact .contentMap{
     width: 100%;
     min-height: 300px;
 }
+section#contact .map{
+    width: calc(100% - 30px) !important;
+    min-height: 300px;
+}
 footer{
     background: #1c1c20;
 } 
